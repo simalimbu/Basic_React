@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const attendanceData = [
@@ -10,8 +11,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-6">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">Attendance</h1>
-        
+        <div className="flex items-center justify-between mb-6">
+          <h1 className="text-3xl font-bold text-gray-800">Attendance</h1>
+          <Link to="/addstudent">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg text-sm font-medium shadow">
+                + Add Student
+            </button>
+          </Link>
+        </div>
+
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
