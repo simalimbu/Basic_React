@@ -62,9 +62,11 @@ const Index = () => {
                     />
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-center space-x-2">
+                    <Link to="/editstudent">
                     <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded-lg text-sm shadow">
                       Edit
                     </button>
+                    </Link>
                     <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-1 rounded-lg text-sm shadow">
                       Delete
                     </button>

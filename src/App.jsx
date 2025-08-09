@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import CountPractice from "./CountPractice";
 import Index from "./pages/Index";
 import AddStudent from "./pages/CreateStudent";
+import EditStudent from "./pages/EditStudent";
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
               <Route path="/" element={<Index/>} />
               <Route path="/count" element={<CountPractice/>} />
               <Route path="/addstudent" element={<AddStudent/>} /> 
+              <Route path="/editstudent" element={<EditStudent/>} />
           </Routes>
         </BrowserRouter>
         </>
