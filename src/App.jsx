@@ -5,6 +5,7 @@ import Index from "./pages/Index";
 import AddStudent from "./pages/CreateStudent";
 import EditStudent from "./pages/EditStudent";
 import CreateTeacher from "./pages/CreateTeacher";
+import EditTeacher from "./pages/EditTeacher";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
               <Route path="/addstudent" element={<AddStudent/>} /> 
               <Route path="/editstudent" element={<EditStudent/>} />
               <Route path="/addteacher" element={<CreateTeacher/>} />
+              <Route path="/editteacher" element={<EditTeacher/>} />
           </Routes>
         </BrowserRouter>
         </>
