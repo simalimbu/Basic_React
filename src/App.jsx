@@ -7,6 +7,7 @@ import EditStudent from "./pages/EditStudent";
 import CreateTeacher from "./pages/CreateTeacher";
 import EditTeacher from "./pages/EditTeacher";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="/addteacher" element={<CreateTeacher/>} />
               <Route path="/editteacher" element={<EditTeacher/>} />
               <Route path="/login" element={<LoginPage/>} />
+              <Route path="/register" element={<RegisterPage/>} />
           </Routes>
         </BrowserRouter>
         </>
