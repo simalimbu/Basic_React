@@ -6,6 +6,7 @@ import AddStudent from "./pages/CreateStudent";
 import EditStudent from "./pages/EditStudent";
 import CreateTeacher from "./pages/CreateTeacher";
 import EditTeacher from "./pages/EditTeacher";
+import LoginPage from "./pages/LoginPage";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
               <Route path="/editstudent" element={<EditStudent/>} />
               <Route path="/addteacher" element={<CreateTeacher/>} />
               <Route path="/editteacher" element={<EditTeacher/>} />
+              <Route path="/login" element={<LoginPage/>} />
           </Routes>
         </BrowserRouter>
         </>
