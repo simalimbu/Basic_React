@@ -11,6 +11,7 @@ import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./pages/NavBar";  // <-- Import navbar
 import ContactPage from "./pages/ContactPage";
+import CoursesPage from "./pages/CoursesPage";
  
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/index" element={<Index />} />
         <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/courses" element={<CoursesPage/>} />
       </Routes>
     </BrowserRouter>
   );
