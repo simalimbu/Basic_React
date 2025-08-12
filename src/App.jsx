@@ -10,6 +10,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./pages/NavBar";  // <-- Import navbar
+import ContactPage from "./pages/ContactPage";
  
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar /> {/* Always visible */}
       <Routes>
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/count" element={<CountPractice />} />
         <Route path="/addstudent" element={<AddStudent />} /> 
         <Route path="/editstudent" element={<EditStudent />} />
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/index" element={<Index />} />
+        <Route path="/contact" element={<ContactPage/>} />
       </Routes>
     </BrowserRouter>
   );
