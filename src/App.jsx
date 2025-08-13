@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./pages/NavBar";  // <-- Import navbar
 import ContactPage from "./pages/ContactPage";
 import CoursesPage from "./pages/Courses/CoursesPage";
+import SinglePage from "./pages/Courses/SinglePage";
 
  
 CoursesPage
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/index" element={<Index />} />
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/courses" element={<CoursesPage/>} />
+        <Route path="/course/:id" element={<SinglePage/>} />
       </Routes>
     </BrowserRouter>
   );

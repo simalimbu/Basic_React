@@ -1,6 +1,5 @@
-
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const CoursesPage = () => {
   const courses = [
@@ -57,7 +56,13 @@ const CoursesPage = () => {
             <h2 className="text-xl font-semibold text-blue-600 mb-3">
               {course.title}
             </h2>
-            <p className="text-gray-600">{course.description}</p>
+            <p className="text-gray-600 mb-4">{course.description}</p>
+            <Link
+              to={`/course/${course.id}`}
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              View Details
+            </Link>
           </div>
         ))}
       </div>
