@@ -1,5 +1,6 @@
-// src/pages/CoursesPage.jsx
+
 import React from "react";
+
 
 const CoursesPage = () => {
   const courses = [

@@ -11,9 +11,10 @@ import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./pages/NavBar";  // <-- Import navbar
 import ContactPage from "./pages/ContactPage";
-import CoursesPage from "./pages/CoursesPage";
- 
+import CoursesPage from "./pages/Courses/CoursesPage";
 
+ 
+CoursesPage
 const App = () => {
   return (
     <BrowserRouter>
