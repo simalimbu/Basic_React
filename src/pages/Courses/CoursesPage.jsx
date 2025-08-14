@@ -43,10 +43,18 @@ const CoursesPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-6">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
-        Our Courses
-      </h1>
+      {/* Page Header */}
+      <div className="max-w-6xl mx-auto flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-800">Our Courses</h1>
+        <Link
+          to="/send-message"
+          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300"
+        >
+          Send Message
+        </Link>
+      </div>
 
+      {/* Courses Grid */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {courses.map((course) => (
           <div

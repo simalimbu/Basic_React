@@ -13,6 +13,7 @@ import Navbar from "./pages/NavBar";  // <-- Import navbar
 import ContactPage from "./pages/ContactPage";
 import CoursesPage from "./pages/Courses/CoursesPage";
 import SinglePage from "./pages/Courses/SinglePage";
+import SendMessage from "./pages/Courses/SendMessage";
 
  
 CoursesPage
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/courses" element={<CoursesPage/>} />
         <Route path="/course/:id" element={<SinglePage/>} />
+        <Route path="/send-message" element={<SendMessage/>} />
       </Routes>
     </BrowserRouter>
   );
