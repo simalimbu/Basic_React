@@ -15,6 +15,7 @@ import CoursesPage from "./pages/Courses/CoursesPage";
 import SinglePage from "./pages/Courses/SinglePage";
 import SendMessage from "./pages/Courses/SendMessage";
 import AboutUs from "./pages/AboutUs";
+import Footer from "./pages/Footer";
 
  
 CoursesPage
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/course/:id" element={<SinglePage/>} />
         <Route path="/send-message" element={<SendMessage/>} />
         <Route path="/about" element={<AboutUs/>} />
+        <Route path="/footer" element={<Footer/>} />
       </Routes>
     </BrowserRouter>
   );
