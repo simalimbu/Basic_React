@@ -1,5 +1,6 @@
 // src/pages/BlogPage.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogPage = () => {
   const blogs = [
@@ -62,9 +63,11 @@ const BlogPage = () => {
 
         {/* Add Blog Button */}
         <div className="mt-6">
-          <button className="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-green-700">
-            + Add Blog
-          </button>
+            <Link to="/addblog">
+                <button className="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-green-700">
+                    + Add Blog
+                 </button>
+            </Link>
         </div>
       </div>
 
