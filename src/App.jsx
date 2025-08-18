@@ -17,6 +17,7 @@ import SendMessage from "./pages/Courses/SendMessage";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./pages/Footer";
 import ContactUs from "./pages/ContactUs";
+import BlogPage from "./pages/BlogPage";
 
  
 CoursesPage
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/footer" element={<Footer/>} />
         <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/blog" element={<BlogPage/>} />
       </Routes>
     </BrowserRouter>
   );

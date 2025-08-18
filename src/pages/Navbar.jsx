@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="space-x-4">
           <Link to="/" className="hover:text-gray-300 font-bold">Home</Link>
           <Link to="/about" className="hover:text-gray-300 font-bold">About Us</Link>
+          <Link to="/blog" className="hover:text-gray-300 font-bold">Blog</Link>
           <Link to="/courses" className="hover:text-gray-300 font-bold">Courses</Link>
           <Link to="/contact" className="hover:text-gray-300 font-bold">Contact</Link>
           <Link to="/login" className="hover:text-gray-300 font-bold">Login</Link>
