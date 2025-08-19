@@ -19,6 +19,7 @@ import Footer from "./pages/Footer";
 import ContactUs from "./pages/ContactUs";
 import BlogPage from "./pages/BlogPage";
 import AddBlog from "./pages/AddBlog";
+import LatestCourses from "./pages/Courses/LatestCourses";
 
  
 CoursesPage
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/contactus" element={<ContactUs/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/addblog" element={<AddBlog/>} />
+        <Route path="/latest-courses" element={<LatestCourses/>} />
       </Routes>
     </BrowserRouter>
   );

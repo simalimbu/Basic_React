@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -20,9 +21,11 @@ const HomePage = () => {
             <li>Personal and professional growth</li>
           </ul>
 
+          <Link to="/latest-courses">
           <button className="mt-4 flex items-center gap-2 bg-blue-400 hover:bg-blue-500 text-blue-900 px-6 py-3 rounded-md font-semibold">
             📘 Start Learning
           </button>
+          </Link>
         </div>
 
         {/* Right Section - Video */}
