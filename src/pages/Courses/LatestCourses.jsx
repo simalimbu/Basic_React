@@ -1,55 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 
 const courses = [
   {
     id: 1,
-    title: "The Role of Water in Socioeconomic Growth: Asian Development Bank's Actions for Water Security and Resilience in Asia-Pacific",
-    image: "/images/course1.jpg",
+    title: "The Role of Water in Socioeconomic Growth",
+    details:
+      "Asian Development Bank's actions for water security and resilience in Asia-Pacific.",
   },
   {
     id: 2,
-    title: "Accelerating Private Sector Action to Respond to Climate Change",
-    image: "/images/course2.jpg",
+    title: "Accelerating Private Sector Action",
+    details: "Responding to climate change with innovative and sustainable strategies.",
   },
   {
     id: 3,
-    title: "Engaging the Private Sector through Local Public-Private Partnerships (PPPs) for Sustainable Water and Sanitation in Asia",
-    image: "/images/course3.jpg",
+    title: "Engaging the Private Sector through PPPs",
+    details:
+      "Local Public-Private Partnerships (PPPs) for sustainable water and sanitation in Asia.",
   },
   {
     id: 4,
-    title: "Building Effective Systems for On-site Sanitation Management",
-    image: "/images/course4.jpg",
+    title: "Building Effective Systems",
+    details: "On-site sanitation management and improved infrastructure planning.",
   },
   {
     id: 5,
-    title: "Advanced Water Treatment and Management Techniques",
-    image: "/images/course5.jpg",
+    title: "Advanced Water Treatment",
+    details: "Modern techniques for safe and sustainable water treatment.",
   },
   {
     id: 6,
-    title: "Monitoring and Evaluation for Water Projects",
-    image: "/images/course6.jpg",
+    title: "Monitoring and Evaluation",
+    details: "Best practices for tracking progress in water projects.",
   },
 ];
 
 const LatestCourses = () => {
-  return (
-    <div className="p-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-2">Latest Courses</h2>
-      <p className="text-gray-500 mb-6">Click to view and take courses, anytime.</p>
+  const [openId, setOpenId] = useState(null);
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  const toggleCourse = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <h2 className="text-3xl font-bold mb-2">Latest Courses</h2>
+      <p className="text-gray-500 mb-6">Click a course to view details.</p>
+
+      <div className="space-y-4">
         {courses.map((course) => (
-          <div key={course.id} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-            <img
-              src={course.image}
-              alt={course.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{course.title}</h3>
+          <div
+            key={course.id}
+            className="border rounded-lg shadow-sm p-4 cursor-pointer hover:shadow-md transition"
+            onClick={() => toggleCourse(course.id)}
+          >
+            <div className="flex justify-between items-center">
+              <h3
+                className={`font-semibold text-lg ${
+                  openId === course.id ? "text-blue-600" : "text-gray-800"
+                }`}
+              >
+                {course.title}
+              </h3>
+              <span className="text-xl">
+                {openId === course.id ? "▲" : "▼"}
+              </span>
             </div>
+            {openId === course.id && (
+              <p className="mt-2 text-gray-600">{course.details}</p>
+            )}
           </div>
         ))}
       </div>
