@@ -20,6 +20,7 @@ import ContactUs from "./pages/ContactUs";
 import BlogPage from "./pages/BlogPage";
 import AddBlog from "./pages/AddBlog";
 import LatestCourses from "./pages/Courses/LatestCourses";
+import FaQsPage from "./pages/FaQsPage";
 
  
 CoursesPage
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/addblog" element={<AddBlog/>} />
         <Route path="/latest-courses" element={<LatestCourses/>} />
+        <Route path="/Faqs" element={<FaQsPage/>} />
       </Routes>
     </BrowserRouter>
   );
