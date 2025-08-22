@@ -17,12 +17,11 @@ import SendMessage from "./pages/Courses/SendMessage";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./pages/Footer";
 import ContactUs from "./pages/ContactUs";
-import BlogPage from "./pages/BlogPage";
-import AddBlog from "./pages/AddBlog";
+import BlogPage from "./pages/Blog/BlogPage";
+import AddBlog from "./pages/Blog/AddBlog";
 import LatestCourses from "./pages/Courses/LatestCourses";
 import FaQsPage from "./pages/FaQsPage";
 
- 
 CoursesPage
 const App = () => {
   return (
