@@ -22,10 +22,17 @@ const HomePage = () => {
           </ul>
 
           <Link to="/latest-courses">
-          <button className="mt-4 flex items-center gap-2 bg-blue-400 hover:bg-blue-500 text-blue-900 px-6 py-3 rounded-md font-semibold">
+          <button className="mt-4 flex items-center gap-2 bg-blue-500 hover:bg-blue-500 text-blue-900 px-6 py-3 rounded-md font-semibold">
             📘 Start Learning
           </button>
           </Link>
+
+          <Link to="/ebooks">
+          <button className="mt-4 flex items-center gap-2 bg-green-400 hover:bg-blue-500 text-blue-900 px-6 py-3 rounded-md font-semibold">
+            📘 E-Books for better learning
+          </button>
+          </Link>
+
         </div>
 
         {/* Right Section - Video */}

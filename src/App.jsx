@@ -22,6 +22,7 @@ import AddBlog from "./pages/Blog/AddBlog";
 import LatestCourses from "./pages/Courses/LatestCourses";
 import FaQsPage from "./pages/FaQsPage";
 import ReadMore from "./pages/Blog/ReadMore";
+import ElearningPage from "./pages/ElearningPage";
 
 CoursesPage
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/latest-courses" element={<LatestCourses/>} />
         <Route path="/Faqs" element={<FaQsPage/>} />
         <Route path="/blog/:id" element={<ReadMore />} />
+        <Route path="/ebooks" element={<ElearningPage />} />
       </Routes>
     </BrowserRouter>
   );
