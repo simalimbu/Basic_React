@@ -36,6 +36,14 @@ const BlogPage = () => {
       description: "How e-learning is shaping the education landscape in Nepal...",
       image: "https://source.unsplash.com/400x250/?Nepal,education",
     },
+     {
+      id: 4,
+      title: "E-Learning in Nepal: Opportunities Ahead",
+      category: "News",
+      date: "1st August, 2025",
+      description: "How e-learning is shaping the education landscape in Nepal...",
+      image: "https://source.unsplash.com/400x250/?Nepal,education",
+    },
   ];
 
   return (
@@ -91,9 +99,11 @@ const BlogPage = () => {
                 {blog.title}
               </h3>
               <p className="mt-2 text-gray-600 text-sm">{blog.description}</p>
-              <button className="mt-3 text-blue-600 font-semibold hover:underline">
+              <Link to={`/blog/${blog.id}`}>
+                <button className="mt-3 text-blue-600 font-semibold hover:underline">
                 Read more →
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         ))}
