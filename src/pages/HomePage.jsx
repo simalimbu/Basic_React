@@ -33,6 +33,12 @@ const HomePage = () => {
           </button>
           </Link>
 
+          <Link to="/community">
+          <button className="mt-4 flex items-center gap-2 bg-green-400 hover:bg-blue-500 text-blue-900 px-6 py-3 rounded-md font-semibold">
+            📘 Join Our Community
+          </button>
+          </Link>
+
         </div>
 
         {/* Right Section - Video */}
