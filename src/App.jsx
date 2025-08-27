@@ -23,6 +23,8 @@ import LatestCourses from "./pages/Courses/LatestCourses";
 import FaQsPage from "./pages/FaQsPage";
 import ReadMore from "./pages/Blog/ReadMore";
 import ElearningPage from "./pages/ElearningPage";
+import SingleEbook from "./pages/SingleEbook";
+
 
 CoursesPage
 const App = () => {
@@ -52,6 +54,7 @@ const App = () => {
         <Route path="/Faqs" element={<FaQsPage/>} />
         <Route path="/blog/:id" element={<ReadMore />} />
         <Route path="/ebooks" element={<ElearningPage />} />
+        <Route path="/ebook/foundation" element={<SingleEbook />} />
       </Routes>
     </BrowserRouter>
   );

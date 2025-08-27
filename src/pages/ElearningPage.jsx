@@ -1,5 +1,6 @@
 // src/pages/ElearningPage.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ebooks = [
   {
@@ -64,7 +65,9 @@ const ElearningPage = () => {
                 href={book.link}
                 className="mt-5 inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
               >
-                Read now →
+                <Link to="/ebook/foundation">
+                  Read now →
+                </Link>
               </a>
             </div>
           </div>
