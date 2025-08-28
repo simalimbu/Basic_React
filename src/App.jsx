@@ -25,6 +25,7 @@ import ReadMore from "./pages/Blog/ReadMore";
 import ElearningPage from "./pages/ElearningPage";
 import SingleEbook from "./pages/SingleEbook";
 import CommunityPage from "./pages/CommunityPage";
+import EnrollNow from "./pages/Courses/EnrollNow";
 
 
 CoursesPage
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/ebooks" element={<ElearningPage />} />
         <Route path="/ebook/foundation" element={<SingleEbook />} />
         <Route path="/community" element={<CommunityPage/>} />
+        <Route path="/enroll" element={<EnrollNow/>} />
       </Routes>
     </BrowserRouter>
   );

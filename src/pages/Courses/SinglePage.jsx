@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaStar, FaHeart } from "react-icons/fa";
 
 const SinglePage = () => {
@@ -79,9 +79,11 @@ const SinglePage = () => {
         </p>
 
         {/* Enroll Button */}
-        <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+        <Link to="/enroll">
+         <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
           Enroll Now
-        </button>
+         </button>
+        </Link>
       </div>
     </div>
   );
